@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: hsl(217, 54%, 11%);
+  font-family: "Lexend Deca", sans-serif;
+}
+.white-text {
+  color: hsl(0, 0%, 100%);
+}
+.gray-text {
+  color: hsl(215, 51%, 70%);
+}
+
+.section-center {
+  width: 375px;
+  margin: 4rem auto;
+  background: hsl(216, 50%, 16%);
+  border-radius: 4%;
+}
+img {
+  width: 100%;
+  object-fit: cover;
+}
+.img-avatar {
+  width: 30px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+.main-container {
+  padding: 1.5rem 1.5rem;
+}
+.heading {
+  margin: 1.5rem 0;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.heading:hover {
+  color: hsl(178, 100%, 50%);
+}
+.paragraph {
+  margin-bottom: 1.5rem;
+}
+.icon-div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+.icon-div svg {
+  margin-bottom: -3px;
+  margin-right: 2px;
+}
+.cyan-clr {
+  color: hsl(178, 100%, 50%);
+}
+.avatar-div {
+  margin-top: 1rem;
+  margin-bottom: 0.75rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.creator {
+  cursor: pointer;
+}
+.creator:hover {
+  color: hsl(178, 100%, 50%);
+}
+.main-picture {
+  cursor: pointer;
+  border-radius: 4%;
+}
+
+.equilibrium {
+  position: relative;
+}
+.view-icon {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: hsl(178, 100%, 50%);
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+  border-radius: 4%;
+}
+.icon-picture {
+  position: absolute;
+  width: 40px;
+  left: 45%;
+  bottom: 45%;
+  opacity: 0;
+}
+.equilibrium:hover .main-picture {
+  opacity: 0.5;
+}
+.equilibrium:hover .view-icon {
+  opacity: 0.4;
+}
+.equilibrium:hover .icon-picture {
+  opacity: 1;
+}
+@media screen and (max-width: 656px) {
+  .equilibrium:hover .view-icon {
+    opacity: 0;
+  }
+  .equilibrium:hover .icon-picture {
+    opacity: 0;
+  }
+  .heading:hover {
+    color: hsl(0, 0%, 100%);
+  }
+  .creator:hover {
+    color: hsl(0, 0%, 100%);
+  }
+  .equilibrium:hover .main-picture {
+    opacity: 1;
+  }
+}
